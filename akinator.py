@@ -13,12 +13,12 @@ async def salvar(ctx):
         nome = arquivo.filename
         await arquivo.save(f"imagens/{nome}")
 
-        arquivo = ai("keras_model.h5",
+        arquivo2 = ai("keras_model.h5",
                     "label.txt",
                     f"imagens/{nome}"
                     )
 
-        await ctx.send(f"eu acho que é: {nome}")
+        await ctx.send(f"eu acho que é: {arquivo2}")
 
         
 
