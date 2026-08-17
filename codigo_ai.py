@@ -43,5 +43,4 @@ def ai(modelo, classe, imagem):
     confidence_score = prediction[0][index]
 
     # Print prediction and confidence score
-    print("Class:", class_name[2:], end="")
-    print("Confidence Score:", confidence_score)
+    return class_name[2:]
